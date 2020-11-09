@@ -30,3 +30,13 @@ Week03 作业题目（周六）：
 6. 提交记录最好要标明明确的含义（比如第几题作业）。
 
 ## 操作步骤
+
+1. 下载老师的项目: https://github.com/kimmking/JavaCourseCodes
+2. 解压, 拷贝其中 `02nio` 路径下的 `nio02` 目录到第三周的作业目录下。
+3. Idea或者Eclipse打开这个Maven项目。
+4. 增加自己的包名, 以做标识。
+5. 将第二周的作业代码整合进来: [homework02](../Week_02/homework02/) 中的代码和pom.xml依赖。
+6. 将 nio01 中的 HttpServer03 代码整合进来作为后端服务，改名为 [BackendServer](./nio02/src/main/java/com/renfufei/homework03/BackendServer.java), 监听 8088 端口。
+7. 找到Netty官网: https://netty.io/wiki/user-guide-for-4.x.html
+8. 参照官方示例, 编写自己的过滤器 [ProxyBizFilter](./nio02/src/main/java/com/renfufei/homework03/ProxyBizFilter.java), 并加入到 [HttpInboundInitializer](./nio02/src/main/java/io/github/kimmking/gateway/inbound/HttpInboundInitializer.java) 的初始化方法中。
+9. 修改 HttpOutboundHandler 类，使用自己写的 第二周的作业代码；
